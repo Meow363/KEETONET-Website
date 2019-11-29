@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chore Door</title>
+    <link href="./chore-door.css" rel="stylesheet" type="text/css">
+    <link href="../../../Resources/CSS/styles.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
+    <!-- FaveIcon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../../../Resources/FaveIcon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../../Resources/FaveIcon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../../Resources/FaveIcon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../../Resources/FaveIcon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../../Resources/FaveIcon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../../Resources/FaveIcon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../../Resources/FaveIcon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../../Resources/FaveIcon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../Resources/FaveIcon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../Resources/FaveIcon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../Resources/FaveIcon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../../Resources/FaveIcon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../Resources/FaveIcon/favicon-16x16.png">
+    <link rel="manifest" href="../../../Resources/FaveIcon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../../../Resources/FaveIcon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+    <!-- Header area which includes logo and nav bar -->
+
+    <header>
+
+        <div class="logo">
+            <img src="../../../Resources/Images/Logo.svg" alt="Logo" width="180" />
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <a href="../../../index.html"><li>Home</li></a>
+                <a href="../../../Resources/HTML/about.html"><li>About</li></a>
+                <a href="../../../Resources/HTML/experience.html"><li>Experience</li></a>
+                <a href="../../../Resources/HTML/education.html"><li class="active">Education</li></a>
+                <a href="../../../Resources/HTML/projects.html"><li>Projects</li></a>
+                <a href="../../../Resources/HTML/contact.html"><li>Contact Me</li></a>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <div class="header">
+
+        <img src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/logo.svg" alt="Logo">
+
+    </div>
+
+    <div class="title-row">
+
+        <img src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/star.svg" alt="star">
+        <p class="instructions-title">Instructions</p>
+        <img src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/star.svg" alt="star">
+
+    </div>
+
+    <table class="instructions-row">
+
+        <tr>
+
+            <td class="instructions-number">1</td>
+            <td class="instructions-text">Hiding behind one of these doors is the ChoreBot.</td>
+
+        </tr>
+        <tr>
+
+            <td class="instructions-number">2</td>
+            <td class="instructions-text">Your mission is to open all of the doors without running into the ChoreBot.</td>
+
+        </tr>
+        <tr>
+
+            <td class="instructions-number">3</td>
+            <td class="instructions-text">If you manage to avoid the ChoreBot until you open the very last door, you win!</td>
+
+        </tr>
+        <tr>
+
+            <td class="instructions-number">4</td>
+            <td class="instructions-text">See if you can score a winning streak!</td>
+
+        </tr>
+
+    </table>
+
+    <div class="door-row">
+
+        <img id="door1" class="door-frame" src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg" alt="Door">
+        <img id="door2" class="door-frame" src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg" alt="Door">
+        <img id="door3" class="door-frame" src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg" alt="Door">
+
+    </div>
+
+    <div id="start" class="start-row">
+
+        Good Luck!
+
+    </div>
+
+    <table class="score-row">
+
+        <tbody>
+
+            <tr>
+
+                <th class="score-text">Current streak:</th>
+                <th class="score-text">Best Streak</th>
+
+            </tr>
+
+            <tr>
+
+                <th class="score-box" id="score-number"></th>
+                <th class="score-box" id="high-score-number"></th>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <script src="./script.js" type="text/javascript"></script>
+</body>
+</html>
